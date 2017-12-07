@@ -8,7 +8,7 @@
     "start": "npm run build && node server/index.js",
 
     "lint": "eslint .",
-    "test": "exit 0 "
+    "test": "npm run build && mocha test/.setup.js test/*.spec.js"
   },
   "dependencies": {
     "axios": "^0.16.1",
